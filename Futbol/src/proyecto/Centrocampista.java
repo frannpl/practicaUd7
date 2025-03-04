@@ -1,4 +1,4 @@
-package jugador;
+package proyecto;
 
 public class Centrocampista extends Jugador{
 
