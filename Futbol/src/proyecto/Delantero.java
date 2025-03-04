@@ -1,7 +1,12 @@
 package proyecto;
 
-public class Delantero extends Jugador{
+public class Delantero extends Jugador {
+	
+	private int paradas;
 
-	private int goles;
+	public Delantero(String nombre, int dorsal, String equipo, int paradas) {
+		super(nombre, dorsal, equipo);
+		// TODO Auto-generated constructor stub
+	}
 
 }
