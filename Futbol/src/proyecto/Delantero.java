@@ -1,5 +1,7 @@
 package proyecto;
 
-public class Delantero {
+public class Delantero extends Jugador{
+
+	private int goles;
 
 }
