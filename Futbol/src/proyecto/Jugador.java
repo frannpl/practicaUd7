@@ -17,7 +17,6 @@ public abstract class Jugador {
 
 	// settter getters
 
-	public abstract void mostrarDatos();
 
 	public String getNombre() {
 		return nombre;
@@ -42,6 +41,12 @@ public abstract class Jugador {
 	public void setEquipo(String equipo) {
 		this.equipo = equipo;
 	}
+	
+
+	// METODOSSS
+	
+	public abstract void mostrarDatos();
+
 
 	@Override
 	public String toString() {

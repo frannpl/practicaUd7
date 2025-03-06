@@ -1,5 +1,7 @@
 package proyecto;
 
+import java.util.Objects;
+
 public class Pivote extends Centrocampista {
 
 	private int intercepciones;
@@ -8,5 +10,42 @@ public class Pivote extends Centrocampista {
 		super(nombre, dorsal, equipo, pasesCompletados);
 		// TODO Auto-generated constructor stub
 	}
+
+	
+	public int getIntercepciones() {
+		return intercepciones;
+	}
+
+	public void setIntercepciones(int intercepciones) {
+		this.intercepciones = intercepciones;
+	}
+
+
+	@Override
+	public String toString() {
+		return  super.toString() + String.format("Intercepciones : %d", intercepciones);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		
+		boolean iguales = false;
+		Pivote otro = (Pivote) obj;
+		
+		if((super.equals(obj)) && this.intercepciones == otro.intercepciones) {
+			
+			iguales = true;
+		}
+		
+			return iguales;
+	}
+	
+	
 
 }

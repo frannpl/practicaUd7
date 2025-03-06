@@ -1,5 +1,7 @@
 package proyecto;
 
+import java.util.Objects;
+
 public abstract class Centrocampista extends Jugador {
 
 	private int pasesCompletados;
@@ -9,10 +11,56 @@ public abstract class Centrocampista extends Jugador {
 		// TODO Auto-generated constructor stub
 	}
 
+	
+	
+	// SETTER GETTER
+	
+	public int getPasesCompletados() {
+		return pasesCompletados;
+	}
+
+	
+	public void setPasesCompletados(int pasesCompletados) {
+		this.pasesCompletados = pasesCompletados;
+	}
+
+
+	// METDOOS
 	@Override
 	public void mostrarDatos() {
 		// TODO Auto-generated method stub
 		
 	}
+ 
 
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		
+		boolean iguales = false;
+		Centrocampista otro = (Centrocampista) obj;
+	
+		if((super.equals(obj)) && this.pasesCompletados == otro.pasesCompletados) {
+			
+			iguales = true;
+		}
+		
+		return iguales;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return  super.toString() + String.format("PasesCompletados: %d", pasesCompletados);
+	}
+
+	
+	
 }
