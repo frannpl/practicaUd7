@@ -21,10 +21,23 @@ public class Main {
 		 	
 		 	
 	        equipo.mostrarAlineacion();
-	
+	        
+	        for(Jugador j : equipo.getJugadores()) {
+	        	System.out.println(j.toString());
+	        }
+	        for(Jugador j : equipo.getJugadores()) {
+	        	j.mostrarDatos();
+	        }
+
+	        Portero p1 =  new Portero("Juan", 1, "Equipo , ", 3);
+	        Portero p2 =  new Portero("Juan", 1, "Equipo , ", 3);
+	        Portero p3 =  new Portero("Juanito", 12, "Equipo3 , ", 8);
 	        
 	        
-		
+	        
+	        System.out.printf("p1 y p2 son iguale: %b \n", p1.equals(p2));
+
+	        System.out.printf("p1 y p3 son iguales: %b \n", p1.equals(p3));
 		
 	
 	

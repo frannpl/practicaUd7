@@ -14,8 +14,16 @@ public class Equipo {
 	    public Equipo() {
 	        jugadores = new Jugador[num_jugadores];
 	    }
+	    
+	    
 
-	    public void addJugador(int posicion, Jugador jugador) {
+	    public Jugador[] getJugadores() {
+			return jugadores;
+		}
+
+
+
+		public void addJugador(int posicion, Jugador jugador) {
 	        if (posicion < 0 || posicion >= num_jugadores) {
 	            throw new IllegalArgumentException("Posición inválida. Debe estar entre 1 y " + (num_jugadores ));
 	        }
