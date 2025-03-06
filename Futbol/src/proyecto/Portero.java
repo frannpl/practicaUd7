@@ -28,7 +28,10 @@ public class Portero extends Jugador {
 
 	@Override
 	public void mostrarDatos() {
-		
+		System.out.println(getNombre());
+		System.out.println(getDorsal());
+		System.out.println("Posicion: portero");
+		System.out.println("Paradas: " + paradas);
 	}
 
 

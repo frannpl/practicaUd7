@@ -46,6 +46,11 @@ public class Pivote extends Centrocampista {
 			return iguales;
 	}
 	
-	
+	@Override
+	public void mostrarDatos() {
+		
+		super.mostrarDatos();
+		System.out.println("Intercepciones : " + intercepciones);
+	}
 
 }

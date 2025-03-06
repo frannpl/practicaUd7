@@ -50,6 +50,11 @@ public class DelanteroCentro extends Delantero {
 	}
 	
 	
-	
+	@Override
+	public void mostrarDatos() {
+
+		super.mostrarDatos();
+		System.out.println("Goles de Penalti: " + golesPenalti);
+	}
 
 }

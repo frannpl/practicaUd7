@@ -49,6 +49,12 @@ public abstract class Extremo extends Delantero{
 	}
 	
 	
-	
+	@Override
+	public void mostrarDatos() {
+
+		super.mostrarDatos();
+		System.out.println("Puesto : " + puesto);
+	}
+
 
 }

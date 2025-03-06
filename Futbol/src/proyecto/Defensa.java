@@ -58,8 +58,11 @@ public class Defensa extends Jugador {
 
 	@Override
 	public void mostrarDatos() {
-		// TODO Auto-generated method stub
 		
+		System.out.println(getNombre());
+		System.out.println(getDorsal());
+		System.out.println("Posicion: defensa");
+		System.out.println("Disputas Realizadas: " + disputasRealizadas);
 	}
 
 }

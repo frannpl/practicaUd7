@@ -21,6 +21,12 @@ public class Central extends Defensa {
 		this.entradas = entradas;
 	}
 
+	@Override
+	public void mostrarDatos() {
+		
+		super.mostrarDatos();
+		System.out.println("Entradas: " + entradas);
+	}
 
 
 	@Override

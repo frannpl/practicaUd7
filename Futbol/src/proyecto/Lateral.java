@@ -21,7 +21,12 @@ public class Lateral extends Defensa{
 		this.puesto = puesto;
 	}
 
-
+	@Override
+	public void mostrarDatos() {
+		
+		super.mostrarDatos();
+		System.out.println("Puesto: " + puesto);
+	}
 
 
 	@Override

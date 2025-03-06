@@ -49,8 +49,11 @@ public class Delantero extends Jugador {
 
 	@Override
 	public void mostrarDatos() {
-		// TODO Auto-generated method stub
-		
+
+		System.out.println(getNombre());
+		System.out.println(getDorsal());
+		System.out.println("Posicion: delantero");
+		System.out.println("Goles : " + goles);
 	}
 
 }

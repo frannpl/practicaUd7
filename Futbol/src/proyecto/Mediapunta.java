@@ -48,7 +48,13 @@ public class Mediapunta extends Centrocampista {
 	}
 	
 	
-	
+	@Override
+	public void mostrarDatos() {
+		
+		super.mostrarDatos();
+		System.out.println("Asistencias : " + asistencias);
+	}
+
 	
 
 }

@@ -9,6 +9,8 @@ public abstract class Centrocampista extends Jugador {
 	public Centrocampista(String nombre, int dorsal, String equipo, int pasesCompletados) {
 		super(nombre, dorsal, equipo);
 		// TODO Auto-generated constructor stub
+		
+		this.pasesCompletados = pasesCompletados;
 	}
 
 	
@@ -28,8 +30,11 @@ public abstract class Centrocampista extends Jugador {
 	// METDOOS
 	@Override
 	public void mostrarDatos() {
-		// TODO Auto-generated method stub
 		
+		System.out.println(getNombre());
+		System.out.println(getDorsal());
+		System.out.println("Posicion: Centrocampista");
+		System.out.println("Pases Completados: " + pasesCompletados);
 	}
  
 
