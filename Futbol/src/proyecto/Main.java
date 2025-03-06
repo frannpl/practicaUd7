@@ -22,9 +22,13 @@ public class Main {
 		 	
 	        equipo.mostrarAlineacion();
 	        
+	        System.out.println("COMPROBACIÓN CON EL TOSTRING-------------");
 	        for(Jugador j : equipo.getJugadores()) {
 	        	System.out.println(j.toString());
 	        }
+	        
+	        
+	        System.out.println("DEMOSTRACION DE LA SELECCION DINAMICA-------------");
 	        for(Jugador j : equipo.getJugadores()) {
 	        	j.mostrarDatos();
 	        }
