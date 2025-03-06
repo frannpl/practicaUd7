@@ -2,15 +2,19 @@ package proyecto;
 
 import java.util.Objects;
 
-public abstract class Extremo extends Delantero{
-// Atributos
-	
-	private String puesto;
-	
-	public Extremo(String nombre, int dorsal, String equipo, int paradas, String puesto) {
-		super(nombre, dorsal, equipo, paradas);
+public class Extremo extends Delantero {
+	public Extremo(String nombre, int dorsal, String equipo, int goles) {
+		super(nombre, dorsal, equipo, goles);
 		this.puesto = puesto;
+
+	
 	}
+
+// Atributos
+
+	private String puesto;
+
+	
 	
 
 	public String getPuesto() {
@@ -21,11 +25,9 @@ public abstract class Extremo extends Delantero{
 		this.puesto = puesto;
 	}
 
-
-
 	@Override
 	public String toString() {
-		return  super.toString() + String.format("Puesto : %s", puesto);
+		return super.toString() + String.format("Puesto : %s", puesto);
 	}
 
 	@Override
@@ -36,25 +38,23 @@ public abstract class Extremo extends Delantero{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		
+
 		boolean iguales = false;
 		Extremo otro = (Extremo) obj;
-		
-		if((super.equals(obj)) && this.puesto == otro.puesto) {
-			
+
+		if ((super.equals(obj)) && this.puesto == otro.puesto) {
+
 			iguales = true;
-			}
-		
-			return iguales;
+		}
+
+		return iguales;
 	}
-	
-	
+
 	@Override
 	public void mostrarDatos() {
 
 		super.mostrarDatos();
 		System.out.println("Puesto : " + puesto);
 	}
-
 
 }

@@ -17,7 +17,7 @@ public class Equipo {
 
 	    public void addJugador(int posicion, Jugador jugador) {
 	        if (posicion < 0 || posicion >= num_jugadores) {
-	            throw new IllegalArgumentException("Posición inválida. Debe estar entre 0 y " + (num_jugadores - 1));
+	            throw new IllegalArgumentException("Posición inválida. Debe estar entre 1 y " + (num_jugadores ));
 	        }
 	        jugadores[posicion] = jugador;
 	    }

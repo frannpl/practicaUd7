@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Delantero extends Jugador {
 	
-	private int goles;
+	protected int goles;
 
 	public Delantero(String nombre, int dorsal, String equipo, int goles) {
 		super(nombre, dorsal, equipo);
