@@ -9,4 +9,11 @@ public class Delantero extends Jugador {
 		// TODO Auto-generated constructor stub
 	}
 
+	
+	@Override
+	public void mostrarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -8,6 +8,13 @@ public class Portero extends Jugador {
 		super(nombre, dorsal, equipo);
 	}
 
+	
+	
+	@Override
+	public void mostrarDatos() {
+		
+	}
+
 
 	
 }

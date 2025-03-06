@@ -1,6 +1,6 @@
 package proyecto;
 
-public class Jugador {
+public abstract class Jugador {
 // Atributos
 	private String nombre;
 	private int dorsal;
@@ -14,4 +14,58 @@ public class Jugador {
 		this.dorsal = dorsal;
 		this.equipo = equipo;
 	}
+
+	// settter getters
+
+	public abstract void mostrarDatos();
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getDorsal() {
+		return dorsal;
+	}
+
+	public void setDorsal(int dorsal) {
+		this.dorsal = dorsal;
+	}
+
+	public String getEquipo() {
+		return equipo;
+	}
+
+	public void setEquipo(String equipo) {
+		this.equipo = equipo;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("Nombre: %s, Dorsal: %d, Equipo: %s", nombre, dorsal, equipo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null) {
+			return false;
+		}
+		if (!this.getClass().equals(obj.getClass())) {
+			return false;
+		}
+
+		boolean iguales = false;
+		Jugador otro = (Jugador) obj;
+
+		if ((this.nombre == otro.nombre) && (this.dorsal == otro.dorsal) && (this.equipo == otro.equipo)) {
+
+			iguales = true;
+		}
+
+		return iguales;
+	}
+
 }
