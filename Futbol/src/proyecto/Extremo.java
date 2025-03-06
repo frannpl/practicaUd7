@@ -3,7 +3,7 @@ package proyecto;
 import java.util.Objects;
 
 public class Extremo extends Delantero {
-	public Extremo(String nombre, int dorsal, String equipo, int goles) {
+	public Extremo(String nombre, int dorsal, String equipo, int goles, String puesto) {
 		super(nombre, dorsal, equipo, goles);
 		this.puesto = puesto;
 
