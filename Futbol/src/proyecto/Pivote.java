@@ -8,7 +8,7 @@ public class Pivote extends Centrocampista {
 
 	public Pivote(String nombre, int dorsal, String equipo, int pasesCompletados, int intercepciones) {
 		super(nombre, dorsal, equipo, pasesCompletados);
-		// TODO Auto-generated constructor stub
+		this.intercepciones = intercepciones;
 	}
 
 	

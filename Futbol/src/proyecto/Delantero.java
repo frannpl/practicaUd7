@@ -8,7 +8,7 @@ public class Delantero extends Jugador {
 
 	public Delantero(String nombre, int dorsal, String equipo, int goles) {
 		super(nombre, dorsal, equipo);
-		// TODO Auto-generated constructor stub
+		this.goles = goles;
 	}
 
 	

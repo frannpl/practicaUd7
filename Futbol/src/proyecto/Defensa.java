@@ -8,7 +8,7 @@ public class Defensa extends Jugador {
 
 	public Defensa(String nombre, int dorsal, String equipo, int disputasRealizadas) {
 		super(nombre, dorsal, equipo);
-		// TODO Auto-generated constructor stub
+		this.disputasRealizadas = disputasRealizadas;
 	}
 
 	

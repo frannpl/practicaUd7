@@ -8,7 +8,7 @@ public class Lateral extends Defensa{
 	
 	public Lateral(String nombre, int dorsal, String equipo, int disputasRealizadas, String puesto) {
 		super(nombre, dorsal, equipo, disputasRealizadas);
-		// TODO Auto-generated constructor stub
+		this.puesto = puesto;
 	}
 
 	

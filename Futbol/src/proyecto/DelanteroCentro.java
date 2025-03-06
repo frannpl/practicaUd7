@@ -10,7 +10,7 @@ public class DelanteroCentro extends Delantero {
 	
 	public DelanteroCentro(String nombre, int dorsal, String equipo, int paradas, int golesPenalti) {
 		super(nombre, dorsal, equipo, paradas);
-		// TODO Auto-generated constructor stub
+		this.golesPenalti = golesPenalti;
 	}
 
 	

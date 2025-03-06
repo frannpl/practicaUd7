@@ -8,7 +8,8 @@ public class Central extends Defensa {
 
 	public Central(String nombre, int dorsal, String equipo, int disputasRealizadas, int entradas) {
 		super(nombre, dorsal, equipo, disputasRealizadas);
-		// TODO Auto-generated constructor stub
+		this.entradas = disputasRealizadas;
+
 	}
 
 	

@@ -8,8 +8,10 @@ public class Portero extends Jugador {
 
 	public Portero(String nombre, int dorsal, String equipo, int paradas) {
 		super(nombre, dorsal, equipo);
+		this.paradas = paradas;
 	}
 
+	
 	
 	
 	public int getParadas() {

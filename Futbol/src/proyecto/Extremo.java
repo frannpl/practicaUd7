@@ -9,7 +9,7 @@ public abstract class Extremo extends Delantero{
 	
 	public Extremo(String nombre, int dorsal, String equipo, int paradas, String puesto) {
 		super(nombre, dorsal, equipo, paradas);
-		// TODO Auto-generated constructor stub
+		this.puesto = puesto;
 	}
 	
 
